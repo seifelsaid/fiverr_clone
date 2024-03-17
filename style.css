@@ -1,0 +1,128 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:'fira sans','sans-serif';
+}
+body{
+    background-color:hsl(0, 0%, 10%);
+}
+.navbar .menu-links a{
+    color:white;
+    text-decoration:none;
+}
+header{
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    padding:20px;
+}
+header .navbar{
+    max-width:1400px;
+    margin:0px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.navbar .menu-links{
+    display:flex;
+    align-items:center;
+   list-style:none;
+    gap:30px;
+}
+.navbar .menu-links .lang a{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    transition:0.2s ease;
+}
+.navbar .menu-links a:hover{
+    color:hsl(0, 48%, 43%);
+}
+.navbar .menu-links .join-btn a{
+    border:1px solid white;
+    border-radius:4px;
+    padding:8px 15px;
+}
+.navbar .menu-links .join-btn a:hover{
+    color:white;
+    background-color:hsl(0, 59%, 56%);
+    border-color:transparent;
+}
+.hero-section{
+    height:100vh;
+    background: url("images/hero-img.jpg");
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    padding:0 20px;
+}
+.hero-section .content{
+    max-width:1400px;
+    margin:0 auto 40px;
+    width:100%;
+}
+.hero-section .content h1{
+    color:white;
+    font-size:3rem;
+    max-width:630px;
+}
+.hero-section .content .search-form{
+    display:flex;
+    height:48px;
+    max-width:630px;
+    margin-top:30px;
+}
+.hero-section .search-form input{
+    width:100%;
+    height:100%;
+    outline:none;
+    border:none;
+    background-color:white;
+    font-size:1rem;
+    padding:0 15px;
+    border-radius: 4px 0 0 4px;
+}
+.hero-section .search-form button{
+    height:100%;
+    width:60px;
+    outline:none;
+    border:none;
+    color:white;
+    border-radius: 0 4px 4px 0;
+    background-color: rgb(29, 124, 29);
+    cursor: pointer;
+    transition:0.2s ease;
+}
+.hero-section .search-form button:hover{
+    background-color: rgb(255, 46, 46);
+}
+.hero-section .popular-tags{
+    display:flex;
+    color:white;
+    gap:40px;
+    font-size: 0.9rem;
+    margin-top:25px;
+    font-weight: 500;
+    align-items: center;
+}
+.hero-section .popular-tags .tags{
+    list-style:none;
+    displaY:flex;
+    gap:10px;
+}
+.hero-section .tags li a{
+    color:white;
+    text-decoration: none;
+    border:1px solid white ;
+    padding:4px 12px;
+    border-radius: 50px;
+    transition:0.2s ease;
+}
+.hero-section .tags li a:hover{
+    color:black;
+    background-color: white;
+}
